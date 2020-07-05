@@ -1,0 +1,35 @@
+.feedback-list {
+    &.changelog-list {
+        .feedback-post-group {
+            &.changelog-draft {
+                border-left: solid 2px $badge-inProgress-color;
+            }
+
+            &.changelog-published {
+                border-left: solid 2px $badge-completed-color;
+            }
+
+            &.changelog-scheduled {
+                border-left: solid 2px $badge-underReview-color;
+            }
+
+            .post-info {
+                .feedback-posted-time {
+                    padding-left: 0;
+                }
+            }
+            .changelog-badge-type {
+                display: inline-block;
+                background: $border-color;
+                margin-left: $space8;
+            }
+        }
+        .changelog-img-field {
+            .changelog-uploaded-img {
+                img {
+                    border-radius: $border-radius;
+                }
+            }
+        }
+    }
+}

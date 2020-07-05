@@ -1,0 +1,46 @@
+.badge {
+    padding: $space4 $space6;
+    text-transform: uppercase;
+    border-radius: 3px;
+    font-size: 11px;
+    // Open
+    &.badge-default {
+        background: $border-color;
+    }
+
+    // Open
+    &.badge-open {
+        color: $badge-open-color;
+        background: $badge-open-bgcolor;
+    }
+
+    // planned
+    &.badge-planned {
+        color: $badge-planned-color;
+        background: $badge-planned-bgcolor;
+    }
+
+    // Under review
+    &.badge-under-review, &.badge-scheduled {
+        color: $badge-underReview-color;
+        background: $badge-underReview-bgcolor;
+    }
+
+    // In progress
+    &.badge-inprogress, &.badge-draft {
+        color: $badge-inProgress-color;
+        background: $badge-inProgress-bgcolor;
+    }
+
+    // Complete
+    &.badge-completed, &.badge-published {
+        color: $badge-completed-color;
+        background: $badge-completed-bgcolor;
+    }
+
+    // Closed
+    &.badge-closed {
+        color: $badge-closed-color;
+        background: $badge-closed-bgcolor;
+    }
+}

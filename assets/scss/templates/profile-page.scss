@@ -1,0 +1,80 @@
+.ss-tabs {
+    border-bottom: solid $border-width $border-color;
+
+    .nav-item {
+        margin-bottom: 0;
+
+        .nav-link {
+            font-size: $font-size-sm;
+            text-transform: uppercase;
+            font-weight: $font-weight-bold;
+            border: none;
+            background: none;
+            padding: $space12 $space16;
+            position: relative;
+            color: $body-color;
+
+            &:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 3px;
+                background-color: transparent;
+                @include transition($transition);
+            }
+
+            &:hover,
+            &:active {
+                color: $primary;
+            }
+
+            &.active {
+                color: $primary;
+
+                &:after {
+                    background-color: $primary;
+                    @include transition($transition);
+                }
+            }
+        }
+    }
+}
+
+#imageUploadInput {
+    display: none;
+}
+
+.ss-image-upload {
+    display: flex;
+    align-items: center;
+    @include for-tablet-portrait-down {
+        display: block;
+    }
+
+    .user-avtar-bg {
+        width: 160px;
+        height: 160px;
+        background: $grey-light;
+        border-radius: 10px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-right: $space16;
+        overflow: hidden;
+        @include for-tablet-portrait-down {
+            margin-bottom: $space16;
+            margin-right: 0;
+        }
+
+        .ss-default-text {
+            font-size: 48px;
+            color: $black-opacity-24;
+            font-style: normal;
+        }
+    }
+
+}

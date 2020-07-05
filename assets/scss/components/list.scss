@@ -1,0 +1,23 @@
+.ss-icon-list-light {
+    li {
+        padding: $space16 0;
+        border-bottom: solid $border-width $white-opacity-12;
+        &:first-child {
+            padding-top: 0;
+        }
+        &:last-child {
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+        .ss-icon-circle {
+            border-radius: 50%;
+            margin-right: $space16;
+            overflow: hidden;
+        }
+        h5 {color: $white; margin-bottom: $space6; font-weight: $font-weight-medium;}
+        p {color: $white-opacity-87; margin-bottom: 0; font-size: $font-size-sm;}
+        .ss-icon-circle {
+            background: $white-opacity-12;
+        }
+    }
+}

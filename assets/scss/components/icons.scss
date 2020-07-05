@@ -1,0 +1,15 @@
+.ss-icon-circle {
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &.ss-icon-md {
+        height: 72px;
+        width: 72px;
+
+        img {
+            height: 70%;
+        }
+    }
+}

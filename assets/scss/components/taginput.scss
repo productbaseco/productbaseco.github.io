@@ -1,0 +1,63 @@
+.bootstrap-tagsinput {
+    border: solid $border-width-2 $border-color;
+    min-height: 48px;
+    background: $white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: $space6 $space12;
+    color: $body-color;
+    border-radius: $border-radius;
+    width: 100%;
+    cursor: text;
+
+    input {
+        border: none;
+        box-shadow: none;
+        outline: none;
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        width: auto;
+        max-width: inherit;
+        color: $heading-color;
+
+        &:focus {
+            border: none;
+            box-shadow: none;
+        }
+    }
+
+  
+
+    .tag {
+        display: flex;
+        align-items: center;
+        &.label-info {
+            background: $secondary;
+            color: $white;
+            border-radius: $border-radius;
+            padding: $space2 $space4;
+            margin: 0 $space4 $space4 0;
+            &:hover, &:active {
+                background: $secondary-hover;
+                [data-role="remove"] {
+                    opacity: 1;
+                }
+            }
+        }
+
+        [data-role="remove"] {
+            margin-left: 8px;
+            cursor: pointer;
+            background-image: url('../images/close-ico.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            opacity: 0.8;
+        }
+    }
+}

@@ -1,0 +1,80 @@
+.ss-modal {
+    .modal-dialog {
+        margin-top: $space16;
+        margin-bottom: $space16;
+    }
+
+    .modal-header {
+        border-color: $border-color;
+
+        .modal-title {
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -18px;
+                width: 40px;
+                height: 3px;
+                background: $secondary;
+                border-radius: 10px;
+            }
+        }
+
+        .close {
+            padding: $space6;
+
+            span.material-icons {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+// Delete Modal
+.delete-modal {
+    .modal-body {
+        padding: $space24;
+    }
+
+    .delete-icon {
+        background: $grey-light;
+        margin-bottom: $space16;
+    }
+
+    .card-text {
+        margin-bottom: $space30;
+    }
+}
+
+// Invite User Modal
+.invite-user-modal {
+    .close {
+        position: absolute;
+        right: 12px;
+        top: 12px;
+    }
+
+    .modal-body {
+        padding: $space24;
+    }
+
+    .invite-icon {
+        background: $grey-light;
+        margin-bottom: $space16;
+
+        .material-icons {
+            font-size: 44px;
+        }
+    }
+
+    .card-text {
+        margin-bottom: $space24;
+    }
+
+    .bootstrap-tagsinput {
+        min-height: 90px;
+        align-items: flex-start;
+    }
+}

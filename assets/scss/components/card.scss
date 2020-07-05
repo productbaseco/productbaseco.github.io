@@ -1,0 +1,120 @@
+.card {
+    background: none;
+    border: none;
+
+    .card-header {
+        background: none;
+        border: none;
+        padding: $space16 $space16 0;
+        margin-bottom: $space16;
+
+        @include for-tablet-portrait-down {
+            padding: $space8 $space8 0;
+            margin-bottom: $space8;
+        }
+
+        &.border-bottom {
+            border-color: $border-color;
+        }
+    }
+
+    .card-title {
+        margin-bottom: $space8;
+    }
+
+    .card-body {
+        padding: 0 $space16;
+        margin-top: $space16;
+        margin-bottom: $space16;
+
+        @include for-tablet-portrait-down {
+            padding: 0 $space8;
+            margin-top: $space8;
+            margin-bottom: $space8;
+        }
+    }
+
+    .card-footer {
+        background: none;
+        border: none;
+        padding: 0 $space16 $space16;
+        margin-top: $space16;
+
+        @include for-tablet-portrait-down {
+            padding: 0 $space8 $space8;
+            margin-top: $space8;
+        }
+    }
+
+    &.ss-card {
+        background: $white;
+        border-radius: $border-radius;
+        box-shadow: $card-shadow;
+        margin-bottom: 30px;
+        @include transition($transition);
+
+        &:hover,
+        &:active {
+            box-shadow: $card-hover-shadow;
+            @include transition($transition);
+        }
+
+        &.card-nohover-shadow {
+
+            &:hover,
+            &:active {
+                box-shadow: $card-shadow;
+            }
+        }
+
+        @include for-tablet-portrait-down {
+            margin-bottom: $space16;
+        }
+
+        .card-header {
+            @include for-tablet-portrait-down {
+                padding: $space16 $space16 0;
+                margin-bottom: $space16;
+            }
+        }
+
+        .card-body {
+            @include for-tablet-portrait-down {
+                padding: 0 $space16;
+                margin-top: $space16;
+                margin-bottom: $space16;
+            }
+        }
+    }
+
+    &.ss-content-equal {
+        display: flex;
+        width: 100%;
+
+        .ss-content-wrappper {
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: column;
+            .card-footer {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+// card title separator
+.card-title-separator {
+    position: relative;
+    padding-bottom: $space8;
+
+    &:after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: '';
+        width: 40px;
+        height: 3px;
+        border-radius: 50px;
+        background: $secondary;
+    }
+}

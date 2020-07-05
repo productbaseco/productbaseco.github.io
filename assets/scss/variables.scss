@@ -1,0 +1,115 @@
+//******** Google Fonts ********//
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&family=Roboto:wght@300;400;500;700&display=swap');
+
+//******** Colors ********//
+$white:                                #fff;
+$white-opacity-87:                     rgba($white, 0.87);
+$white-opacity-54:                     rgba($white, 0.54);
+$white-opacity-24:                     rgba($white, 0.24);
+$white-opacity-12:                     rgba($white, 0.12);
+
+$black:                                #000;
+$black-opacity-87:                     rgba($black, 0.87);
+$black-opacity-54:                     rgba($black, 0.54);
+$black-opacity-24:                     rgba($black, 0.24);
+$black-opacity-16:                     rgba($black, 0.16);
+$black-opacity-12:                     rgba($black, 0.12);
+$black-opacity-08:                     rgba($black, 0.08);
+$black-opacity-04:                     rgba($black, 0.04);
+
+$primary:                              #2d66f9;
+$primary-hover:                        darken($primary, 5%);
+$secondary:                            #1ccecb;
+$secondary-hover:                      darken($secondary, 5%);
+$heading-color:                        #2f313c;
+$body-color:                           #6b757d;
+$body-bgcolor:                         #F9F9F9;
+$grey-dark:                            #555;
+$grey-light:                           #f5f5f5;
+$grey-lighter:                         #fbfbfb;
+$border-color:                         #EBE6F6;
+$success-color:                        #259b24;
+$danger-color:                         #F44336; 
+
+//******** Fonts Family ********//
+$heading-font:                                 'Heebo', sans-serif;
+$body-font:                                    'Roboto', sans-serif;
+
+//******** Font Size ********//
+$h1-font-size:                                 2rem;
+$h1-font-mobile-size:                          1.75rem;
+$h2-font-size:                                 1.5rem;
+$h2-font-mobile-size:                          1.25rem;
+$h4-font-mobile-size:                          1.125rem;
+$h5-font-size:                                 1.25rem;
+$h5-font-mobile-size:                          1.125rem;
+$display-5-font-size:                          3rem;
+$display-5-font-mobile-size:                   2.125rem;
+$font-size-sm:                                 0.875rem;
+$font-size-13:                                 0.813rem;
+$font-size-12:                                 0.75rem;
+$font-size-normal:                             1rem;
+$font-size-18:                                 1.125rem;
+
+//******** Font Weight ********//
+$font-weight-regular:                          400;
+$font-weight-medium:                           500;
+$font-weight-semibold:                         600;
+$font-weight-bold:                             700;
+
+//******** Transition ********//
+$transition:                                   0.3s ease-in;
+
+//******** Spaces ********//
+$space2:           0.125rem;
+$space4:           0.25rem;
+$space6:           0.375rem;
+$space8:           0.5rem;
+$space10:          0.625rem;
+$space12:          0.75rem;
+$space16:          1rem;
+$space24:          1.5rem;
+$space30:          1.875rem;
+
+//******** Card ********//
+$card-shadow:                                  0px 2px 1px -1px rgba(0, 0, 0, 0.08), 0px 1px 1px 0px rgba(0, 0, 0, 0.04), 0px 1px 3px 0px rgba(0,0,0,.04);
+$card-hover-shadow:                            0 8px 14px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04);
+
+
+//******** Border ********//
+$border-width:          1px;
+$border-width-2:        2px;
+$border-radius:         0.25rem;
+$divider-light:         $black-opacity-04;
+
+
+//******** Button ********//
+$btn-shadow:                    0px 1px 2px 1px $black-opacity-04, 0px 2px 4px 0px $black-opacity-08;
+$btn-hover-shadow:              0 6px 12px 0 $black-opacity-24;
+$btn-icon-font-size:            1.125rem;
+
+$link-hover-bgcolor: #f8f8f8;
+
+
+//******** Card ********//
+$badge-underReview-color:                       #c04503;
+$badge-underReview-bgcolor:                     #feede2;
+
+$badge-inProgress-color:                        #0059b9;
+$badge-inProgress-bgcolor:                      #e2eefb;
+
+$badge-completed-color:                         #1d7c42;
+$badge-completed-bgcolor:                       #d4f7d5;
+
+$badge-closed-color:                            $white;
+$badge-closed-bgcolor:                          #999;
+
+$badge-open-color:                              #727e89;
+$badge-open-bgcolor:                            #e9eef3;
+
+$badge-planned-color:                           #e04348;
+$badge-planned-bgcolor:                         #ffdbdd;
+
+
+//******** Notification ********//
+$nofication-unread-bgcolor:                     rgba($secondary, .06);

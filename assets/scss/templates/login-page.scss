@@ -1,0 +1,143 @@
+.login-page {
+    min-height: 100vh;
+    .login-bg {
+        width: 100%; display: flex; padding: 0 $space24; background-color: $primary; background-repeat: no-repeat; background-position: center; background-size: cover;
+        background-image: url('../images/login-bg.jpg');
+        .login-content {
+            max-width: 460px; width: 100%; margin: $space30 $space30 0;
+            h1 { color: $white; }
+            p.lead {color: $white-opacity-87;}            
+        }
+    }
+    .login-section {
+        max-width: 460px; width: 100%; margin-left: auto; margin-right: 30px;
+
+        @include for-tablet-portrait-down {
+            margin: 0 auto;    
+        }
+        
+        .card-header {
+            .navbar-brand {
+                padding: 0;
+                @include for-tablet-down {
+                    margin-bottom: $space16;
+                }
+                img {
+                    height: 24px;
+                }
+            }
+        }
+        .login-social-links {
+            margin-bottom: $space8;
+            li {
+                margin-bottom: $space8;
+                width: 100%;
+                a {
+                    border: solid $border-width $border-color;
+                    display: flex;
+                    align-items: center;
+                    border-radius: $border-radius;
+                    color: $body-color;
+                    padding: $space8 $space12;
+                    justify-content: center;
+                    font-weight: $font-weight-semibold;
+                    @include for-tablet-down {
+                        padding: $space8;
+                    }
+                    &:hover, &:active {
+                        background: $link-hover-bgcolor;
+                    }
+                    .social-icon {
+                        display: block;
+                        width: 24px;
+                        height: 24px;
+                        background-position: center;
+                        background-size: 24px;
+                        background-repeat: no-repeat;
+                        &.google-icon { background-image: url('../images/google-ico.svg');}
+                    }
+                    .social-media-text {
+                        margin-left: $space8;
+                    }
+                }
+            }
+        }
+        .ss-or-line {
+            position: relative;
+            text-align: center;
+            &::before {
+                content: '';
+                background: $border-color;
+                height: 1px;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: 50%;
+            }
+            span { background: $white; padding: 0 $space12; position: relative; font-size: $font-size-sm; }
+        }
+        .card-body {
+            flex-grow: 1;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            margin-bottom: $space30;
+            @include for-tablet-portrait-down {
+                flex-grow: 0.5;
+            }
+
+            .ss-signup-text {
+                font-size: $font-size-sm;
+                margin: 0 $space4 0 0;
+                text-align: center;
+                .btn-signup-link {
+                    display: inline-block;
+                    color: $primary;
+                    font-weight: $font-weight-bold;
+                    &:hover, &:active {
+                        color: $primary-hover;
+                    }
+                }
+            }
+
+            .ss-login-text {
+                font-size: $font-size-sm;
+                margin: 0 $space4 0 0;
+                text-align: center;
+                .btn-login-link {
+                    display: inline-block;
+                    color: $primary;
+                    font-weight: $font-weight-bold;
+                    &:hover, &:active {
+                        color: $primary-hover;
+                    }
+                }
+            }
+            .ss-accept-terms {
+                font-size: $font-size-12;
+                margin: 0 0 $space30;
+            }
+        }
+        .custom-control-label {
+            a {
+                color: $heading-color;
+                display: inline-block;
+                border-bottom: solid $border-width $heading-color;
+                font-weight: $font-weight-bold;
+                &:hover, &:active {
+                    color: $primary;
+                    border-color: $primary;
+                }
+            }
+        }
+
+        .forgot-password-link {
+            color: $heading-color;
+            font-weight: $font-weight-bold;
+            font-size: $font-size-sm;
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}

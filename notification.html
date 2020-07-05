@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification | ProductBase</title>
+    <link rel="icon" href="assets/images/favicon.ico">
+
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/productbase-compress.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white ss-navbar fixed-top">
+        <div class="container">
+            <div class="">
+                <button class="navbar-toggler mr-2" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="dashboard.html">
+                    <img src="assets/images/logo.svg" alt="Logo" class="img-fluid">
+                </a>
+            </div>
+            <div class="navbar-overlay"></div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <span class="navbar-mobile-close">
+                    <i class="material-icons">close</i>
+                </span>
+                <ul class="navbar-nav navbar-menu-link mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="roadmap.html">Roadmap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="changelog.html">Changelog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="users.html">Users</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="navbar-nav navbar-right-list">
+                <li class="nav-item dropdown notification-dropdown">
+                    <a class="nav-link dropdown-toggle media" href="#" id="nofiticationDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">notifications</i>
+                        <span class="badge badge-secondary">04</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="nofiticationDropdown">
+                        <div class="dropdown-menu-items">
+                            <a class="dropdown-item media notification-unread" href="#">
+                                <div class="media-left mr-3">
+                                    <img src="assets/images/40x40.png" class="img-fluid rounded-circle">
+                                </div>
+                                <div class="media-body">
+                                    <h5>Notificaton title</h5>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <span class="notification-time"><i class="material-icons">query_builder</i> 5
+                                        minutes ago</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item media notification-unread" href="#">
+                                <div class="media-left mr-3">
+                                    <img src="assets/images/40x40.png" class="img-fluid rounded-circle">
+                                </div>
+                                <div class="media-body">
+                                    <h5>Notificaton title</h5>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <span class="notification-time"><i class="material-icons">query_builder</i> 5
+                                        minutes ago</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item media" href="#">
+                                <div class="media-left mr-3">
+                                    <img src="assets/images/40x40.png" class="img-fluid rounded-circle">
+                                </div>
+                                <div class="media-body">
+                                    <h5>Notificaton title</h5>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <span class="notification-time"><i class="material-icons">query_builder</i> 5
+                                        minutes ago</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item media" href="#">
+                                <div class="media-left mr-3">
+                                    <img src="assets/images/40x40.png" class="img-fluid rounded-circle">
+                                </div>
+                                <div class="media-body">
+                                    <h5>Notificaton title</h5>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <span class="notification-time"><i class="material-icons">query_builder</i> 5
+                                        minutes ago</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item media" href="#">
+                                <div class="media-left mr-3">
+                                    <img src="assets/images/40x40.png" class="img-fluid rounded-circle">
+                                </div>
+                                <div class="media-body">
+                                    <h5>Notificaton title</h5>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <span class="notification-time"><i class="material-icons">query_builder</i> 5
+                                        minutes ago</span>
+                                </div>
+                            </a>
+                        </div>
+                        <a href="notification.html" class="notification-viewall">View all</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown user-dropdown">
+                    <a class="nav-link dropdown-toggle media" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="media-body">
+                            <h5>Jaydin Jones</h5>
+                            <p class="card-subtitle">Admin</p>
+                        </div>
+                        <img src="assets/images/user-avatar.jpg" alt="User Avatar" class="img-fluid rounded-circle"
+                            width="40">
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu-items">
+                            <a class="dropdown-item" href="profile.html"><i
+                                    class="material-icons mr-2">person</i>Profile</a>
+                            <a class="dropdown-item" href="settings.html"><i
+                                    class="material-icons mr-2">settings</i>Settings</a>
+                            <a class="dropdown-item" href="index.html"><i
+                                    class="material-icons mr-2">power_settings_new</i>Logout</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-content">
+        <div class="container">
+
+            <!-- Page Title -->
+            <div class="row align-items-center page-title mb-3">
+                <div class="col-md-12 d-flex align-items-start">
+                    <img src="assets/images/notification-ico.svg" alt="Icon" class="mr-2" width="32px">
+                    <div>
+                        <h1 class="mb-0">Notification</h1>
+                        <ol class="breadcrumb ss-breadcrumb">
+                            <li class="breadcrumb-item"><a href="/dashboard.html">Dashboard</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Notification</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!-- End Page Title -->
+
+            <!-- Notification Group -->
+            <div class="notif-group">
+                <span class="notif-data-group">Today, 08 June 2020</span>
+                <ul class="list-unstyled notif-list">
+                    <li class="d-flex">
+                        <div class="media-left mr-3">
+                            <img src="assets/images/40x40.png" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="media-body">
+                            <div class="d-md-flex justify-content-between">
+                                <h5>Notificaton title</h5>
+                                <span class="notification-time">
+                                    <i class="material-icons">query_builder</i> 5 minutes ago
+                                </span>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                        </div>
+                    </li>
+                    <li class="d-flex">
+                        <div class="media-left mr-3">
+                            <img src="assets/images/40x40.png" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="media-body">
+                            <div class="d-md-flex justify-content-between">
+                                <h5>Notificaton title</h5>
+                                <span class="notification-time">
+                                    <i class="material-icons">query_builder</i> 5 minutes ago
+                                </span>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </li>
+                    <li class="d-flex">
+                        <div class="media-left mr-3">
+                            <img src="assets/images/40x40.png" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="media-body">
+                            <div class="d-md-flex justify-content-between">
+                                <h5>Notificaton title</h5>
+                                <span class="notification-time">
+                                    <i class="material-icons">query_builder</i> 5 minutes ago
+                                </span>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- End Notification Group -->
+
+            <!-- Notification Group -->
+            <div class="notif-group">
+                <span class="notif-data-group">Yesterday, 07 June 2020</span>
+                <ul class="list-unstyled notif-list">
+                    <li class="d-flex">
+                        <div class="media-left mr-3">
+                            <img src="assets/images/40x40.png" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="media-body">
+                            <div class="d-md-flex justify-content-between">
+                                <h5>Notificaton title</h5>
+                                <span class="notification-time">
+                                    <i class="material-icons">query_builder</i> 5 minutes ago
+                                </span>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                        </div>
+                    </li>
+                    <li class="d-flex">
+                        <div class="media-left mr-3">
+                            <img src="assets/images/40x40.png" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="media-body">
+                            <div class="d-md-flex justify-content-between">
+                                <h5>Notificaton title</h5>
+                                <span class="notification-time">
+                                    <i class="material-icons">query_builder</i> 5 minutes ago
+                                </span>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </li>
+                    <li class="d-flex">
+                        <div class="media-left mr-3">
+                            <img src="assets/images/40x40.png" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="media-body">
+                            <div class="d-md-flex justify-content-between">
+                                <h5>Notificaton title</h5>
+                                <span class="notification-time">
+                                    <i class="material-icons">query_builder</i> 5 minutes ago
+                                </span>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- End Notification Group -->
+
+            <!-- Notification Group -->
+            <div class="notif-group">
+                <span class="notif-data-group">06 June 2020</span>
+                <ul class="list-unstyled notif-list">
+                    <li class="d-flex">
+                        <div class="media-left mr-3">
+                            <img src="assets/images/40x40.png" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="media-body">
+                            <div class="d-md-flex justify-content-between">
+                                <h5>Notificaton title</h5>
+                                <span class="notification-time">
+                                    <i class="material-icons">query_builder</i> 5 minutes ago
+                                </span>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                        </div>
+                    </li>
+                    <li class="d-flex">
+                        <div class="media-left mr-3">
+                            <img src="assets/images/40x40.png" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="media-body">
+                            <div class="d-md-flex justify-content-between">
+                                <h5>Notificaton title</h5>
+                                <span class="notification-time">
+                                    <i class="material-icons">query_builder</i> 5 minutes ago
+                                </span>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </li>
+                    <li class="d-flex">
+                        <div class="media-left mr-3">
+                            <img src="assets/images/40x40.png" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="media-body">
+                            <div class="d-md-flex justify-content-between">
+                                <h5>Notificaton title</h5>
+                                <span class="notification-time">
+                                    <i class="material-icons">query_builder</i> 5 minutes ago
+                                </span>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- End Notification Group -->
+
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="ss-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="copyrights-text">© 2020. <a href="dashboard.html">ProductBase</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="assets/js/productbase-compress.min.js"></script>
+</body>
+
+</html>

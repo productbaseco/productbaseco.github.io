@@ -1,0 +1,23 @@
+.user-info-list {
+    margin: 0;
+
+    li {
+        border-bottom: solid $border-width $border-color;
+        padding: $space8 0;
+
+        &:last-child {
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        p {
+            font-size: $font-size-12;
+            margin-bottom: $space4;
+        }
+
+        h6 {
+            font-size: $font-size-sm;
+            margin-bottom: 0;
+        }
+    }
+}
